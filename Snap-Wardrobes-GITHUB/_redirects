@@ -1,7 +1,6 @@
 # Old WordPress URLs -> new pages (301 permanent). Cloudflare Pages reads this automatically.
+# NOTE: no self-redirects (/gallery, /services) - they caused redirect loops. Cloudflare handles trailing slashes.
 
-/services/  /services  301
-/services  /services  301
 /services/walk-in-wardrobes/  /walk-in-wardrobes  301
 /services/walk-in-wardrobes  /walk-in-wardrobes  301
 /services/built-in-wardrobes/  /built-in-wardrobes  301
@@ -12,8 +11,6 @@
 /services/sliding-door-wardrobes  /sliding-wardrobe-doors  301
 /services/pantries-linen-cabinets/  /services  301
 /services/pantries-linen-cabinets  /services  301
-/gallery/  /gallery  301
-/gallery  /gallery  301
 /about-us/  /about  301
 /about-us  /about  301
 /contact-us/  /about#contact  301
