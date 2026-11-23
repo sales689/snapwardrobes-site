@@ -38,6 +38,12 @@
 .pricetable th,.pricetable td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
 .pricetable th{background:var(--dark);color:#F4EFE4;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .pricetable td:last-child{font-weight:800;color:var(--head);white-space:nowrap}
+.pricetable td{vertical-align:top}
+.pricetable.text-last td:last-child{font-weight:400;color:inherit;white-space:normal}
+.pricetable.text-last td:first-child{font-weight:800;color:var(--head);white-space:nowrap}
+.pricetable.text-last th:first-child,.pricetable.text-last td:first-child{width:1%}
+@media(max-width:900px){.pricetable{font-size:15px}.pricetable th,.pricetable td{padding:11px 12px}}
+@media(max-width:600px){.pricetable{font-size:14px;margin:18px 0}.pricetable th,.pricetable td{padding:10px 8px}.pricetable th{font-size:10.5px;letter-spacing:.05em}}
 .keybox{background:var(--dark);color:#EDE6D8;border-radius:8px;padding:24px 26px;margin:30px 0}
 .keybox h3{color:var(--gold-l);margin:0 0 10px;font-size:16px;letter-spacing:.1em;text-transform:uppercase}
 .keybox p,.keybox li{color:#DDE6E1;font-size:15.5px}
